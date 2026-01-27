@@ -31,17 +31,34 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+.signature-gift-box-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .blog-img {
   font-size: 5rem;
   margin-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .brand-name {
+  position: absolute;
+  bottom: 10px;
   color: var(--white);
   font-weight: 600;
   font-size: 1.1rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 15px;
+  border-radius: 5px;
 }
 
 .signature-gift-box-info {
@@ -76,4 +93,3 @@
     gap: 20px;
   }
 }
-

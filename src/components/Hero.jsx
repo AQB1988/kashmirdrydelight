@@ -11,7 +11,16 @@ const Hero = () => {
       </div>
       <div className="hero-image">
         <div className="banner-video-thumbnail">
-          <div className="video-placeholder"></div>
+          <img 
+            src="/assets/images/banners/banner-hero.jpg" 
+            alt="Kashmir Dry Delight Premium Products"
+            className="hero-banner-image"
+            onError={(e) => {
+              e.target.style.display = 'none';
+              e.target.nextElementSibling.style.display = 'flex';
+            }}
+          />
+          <div className="video-placeholder" style={{display: 'none'}}></div>
           <button className="play-button" aria-label="Play video">▶</button>
         </div>
       </div>
@@ -20,4 +29,3 @@ const Hero = () => {
 }
 
 export default Hero
-

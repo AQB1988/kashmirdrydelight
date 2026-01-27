@@ -48,10 +48,23 @@
   align-items: center;
 }
 
-.logo h1 {
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text {
   font-size: 1.8rem;
   color: var(--primary-color);
   font-weight: 700;
+  margin: 0;
 }
 
 .nav-menu {
@@ -188,4 +201,3 @@
     margin-left: 20px;
   }
 }
-

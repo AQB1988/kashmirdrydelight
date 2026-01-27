@@ -31,8 +31,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.5rem;
   margin: 0 auto 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonial-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  background: var(--primary-color);
 }
 
 .testimonial-rating {
@@ -61,4 +79,3 @@
     grid-template-columns: 1fr;
   }
 }
-

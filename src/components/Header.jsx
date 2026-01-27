@@ -24,7 +24,7 @@ const Header = () => {
               <span>✉️ info@kashmirdrydelight.com</span>
             </div>
             <div className="social-links">
-              <a href="#" aria-label="Facebook">
+              <a href="www.facebook.com" aria-label="Facebook">
                 Facebook
               </a>
               <a href="#" aria-label="Twitter">

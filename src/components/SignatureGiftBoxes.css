@@ -1,0 +1,79 @@
+.signature-gift-boxes {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.signature-gift-boxes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.signature-gift-box-card {
+  background: var(--bg-light);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.signature-gift-box-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.signature-gift-box-image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-img {
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+
+.brand-name {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.signature-gift-box-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.signature-gift-box-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: var(--text-dark);
+}
+
+.btn-link {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.btn-link:hover {
+  color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .signature-gift-boxes {
+    padding: 50px 0;
+  }
+
+  .signature-gift-boxes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+

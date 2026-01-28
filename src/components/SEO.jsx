@@ -8,7 +8,7 @@ const SEO = ({
   url = '',
   type = 'website'
 }) => {
-  const siteUrl = 'https://yourdomain.com' // Replace with your actual domain
+  const siteUrl = 'https://kashmir-dry-delignt.vercel.app'
   const fullUrl = url ? `${siteUrl}${url}` : siteUrl
   const fullImageUrl = image.startsWith('http') ? image : `${siteUrl}${image}`
 

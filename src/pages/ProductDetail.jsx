@@ -64,12 +64,24 @@ const ProductDetail = () => {
   return (
     <main className="product-detail-page">
       <SEO 
-        title={`${product.name} - Buy Online | Kashmir Dry Delight`}
-        description={product.description}
-        keywords={`${product.name}, buy ${product.name} online, premium ${product.category}, kashmir dry fruits`}
+        title={`${product.name} - Buy Online | Premium Quality | Kashmir Dry Delight`}
+        description={`Buy premium quality ${product.name} online from Kashmir Dry Delight. ${product.description} 100% quality guarantee, fast delivery across India. Best prices on ${product.name.toLowerCase()}.`}
+        keywords={`${product.name}, buy ${product.name} online, ${product.name.toLowerCase()} price, premium ${product.name.toLowerCase()}, ${product.name.toLowerCase()} online india, best ${product.name.toLowerCase()}, quality ${product.name.toLowerCase()}, kashmir ${product.name.toLowerCase()}, ${product.category}, dry fruits, nuts, dates, berries, kashmir dry fruits, buy dry fruits online, online dry fruits, premium dry fruits, dry fruits india`}
         image={product.image}
         url={`/product/${product.id}`}
         type="product"
+        product={{
+          name: product.name,
+          description: product.description,
+          image: product.image,
+          price: currentPrice,
+          basePrice: product.basePrice
+        }}
+        breadcrumbs={[
+          { name: 'Home', url: '/' },
+          { name: 'Shop', url: '/shop' },
+          { name: product.name, url: `/product/${product.id}` }
+        ]}
       />
       <div className="container">
         <nav className="breadcrumb">

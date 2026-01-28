@@ -34,9 +34,9 @@ const Shop = () => {
   return (
     <main className="shop-page">
       <SEO 
-        title="Shop Premium Dry Fruits - Kashmir Dry Delight"
-        description="Browse our wide collection of premium dry fruits, nuts, dates, berries, and gift boxes. Best quality guaranteed with fast delivery across India."
-        keywords="buy dry fruits online, premium nuts, almonds, cashews, dates, berries, gift boxes, kashmir dry fruits"
+        title="Shop Premium Dry Fruits Online - Buy Dry Fruits, Nuts, Dates & Berries | Kashmir Dry Delight"
+        description="Browse our wide collection of premium dry fruits, nuts, dates, berries, and gift boxes. Best quality guaranteed with fast delivery across India. Shop almonds, cashews, walnuts, pistachios, dates, berries, and more at best prices."
+        keywords="buy dry fruits online, shop dry fruits, dry fruits online shopping, premium nuts, almonds online, cashews online, dates online, berries online, gift boxes dry fruits, kashmir dry fruits, buy nuts online, online dry fruits store, best dry fruits online, premium dry fruits online, dry fruits shop, dry fruits store, wholesale dry fruits, dry fruits delivery, mamra almonds, kashmiri almonds, premium cashews, medjool dates, deglet noor dates, walnuts online, pistachios online, cranberries, blueberries, sunflower seeds, pumpkin seeds, dry fruits india"
         url="/shop"
       />
       <div className="container">

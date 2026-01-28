@@ -5,9 +5,9 @@ const About = () => {
   return (
     <main className="about-page">
       <SEO 
-        title="About Us - Kashmir Dry Delight | Premium Dry Fruits"
-        description="Learn about Kashmir Dry Delight - your trusted source for premium quality dry fruits from Kashmir. We bring you the finest selection with 100% quality guarantee."
-        keywords="about kashmir dry delight, premium dry fruits kashmir, quality dry fruits, kashmir nuts"
+        title="About Us - Kashmir Dry Delight | Premium Dry Fruits Store | Best Quality Dry Fruits"
+        description="Learn about Kashmir Dry Delight - your trusted source for premium quality dry fruits from Kashmir. We bring you the finest selection with 100% quality guarantee. Direct sourcing from Kashmir, fresh products, fast delivery across India."
+        keywords="about kashmir dry delight, premium dry fruits kashmir, quality dry fruits, kashmir nuts, about dry fruits store, best dry fruits company, premium dry fruits supplier, kashmir dry fruits supplier, quality dry fruits india, authentic kashmir dry fruits, trusted dry fruits brand, dry fruits quality guarantee, fresh dry fruits, organic dry fruits, wholesale dry fruits supplier"
         url="/about"
       />
       <div className="container">

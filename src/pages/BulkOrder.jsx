@@ -39,9 +39,9 @@ const BulkOrder = () => {
   return (
     <main className="bulk-order-page">
       <SEO 
-        title="Bulk Order - Wholesale Dry Fruits | Kashmir Dry Delight"
-        description="Place bulk orders for premium dry fruits at wholesale prices. Competitive pricing, custom packaging, and flexible payment terms. Get a quote today!"
-        keywords="bulk order dry fruits, wholesale nuts, bulk dry fruits, wholesale pricing, bulk order kashmir"
+        title="Bulk Order - Wholesale Dry Fruits | Best Prices | Kashmir Dry Delight"
+        description="Place bulk orders for premium dry fruits at wholesale prices. Competitive pricing, custom packaging, and flexible payment terms. Get a quote today! Minimum order flexibility, dedicated account manager, fast delivery."
+        keywords="bulk order dry fruits, wholesale nuts, bulk dry fruits, wholesale pricing, bulk order kashmir, wholesale dry fruits, bulk dry fruits online, wholesale dry fruits india, bulk order almonds, bulk order cashews, wholesale dates, bulk order nuts, wholesale dry fruits supplier, bulk dry fruits price, wholesale dry fruits rates, corporate dry fruits order, bulk order gift boxes, wholesale dry fruits delivery, bulk dry fruits quote, wholesale pricing dry fruits"
         url="/bulk-order"
       />
       <div className="container">

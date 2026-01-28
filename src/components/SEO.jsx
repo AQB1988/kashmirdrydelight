@@ -8,9 +8,41 @@ const SEO = ({
   url = '',
   type = 'website'
 }) => {
-  const siteUrl = 'https://kashmir-dry-delignt.vercel.app'
+  const siteUrl = 'https://kashmirdrydelights.vercel.app'
   const fullUrl = url ? `${siteUrl}${url}` : siteUrl
   const fullImageUrl = image.startsWith('http') ? image : `${siteUrl}${image}`
+
+  // Structured Data (JSON-LD) for better SEO
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Kashmir Dry Delight",
+    "url": siteUrl,
+    "logo": fullImageUrl,
+    "description": description,
+    "sameAs": [],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "areaServed": "IN",
+      "availableLanguage": "English"
+    }
+  }
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Kashmir Dry Delight",
+    "url": siteUrl,
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": `${siteUrl}/shop?search={search_term_string}`
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
 
   return (
     <Helmet>
@@ -36,6 +68,14 @@ const SEO = ({
       
       {/* Canonical URL */}
       <link rel="canonical" href={fullUrl} />
+      
+      {/* Structured Data */}
+      <script type="application/ld+json">
+        {JSON.stringify(organizationSchema)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(websiteSchema)}
+      </script>
     </Helmet>
   )
 }

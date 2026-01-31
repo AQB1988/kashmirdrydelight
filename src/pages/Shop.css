@@ -98,47 +98,6 @@
   margin-bottom: 15px;
 }
 
-.product-card-actions {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.product-card-actions .btn {
-  flex: 1;
-  padding: 12px;
-  font-size: 0.9rem;
-}
-
-.btn-whatsapp-small {
-  background: #25D366;
-  color: var(--white);
-  border: 2px solid #25D366;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  font-weight: 600;
-  transition: all 0.3s;
-}
-
-.btn-whatsapp-small:hover {
-  background: #20BA5A;
-  border-color: #20BA5A;
-  transform: translateY(-2px);
-  box-shadow: 0 3px 10px rgba(37, 211, 102, 0.3);
-}
-
-.btn-whatsapp-small:active {
-  transform: translateY(0);
-}
-
-.btn-whatsapp-small svg {
-  flex-shrink: 0;
-}
-
 .product-info .btn {
   width: 100%;
 }

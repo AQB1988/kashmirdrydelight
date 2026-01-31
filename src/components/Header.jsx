@@ -20,7 +20,7 @@ const Header = () => {
         <div className="container">
           <div className="header-top-content">
             <div className="contact-info">
-              <span>📞 +91-7051174849</span>
+              <span>📞 +916005324499</span>
               <span>✉️ info@kashmirdrydelight.com</span>
             </div>
             <div className="social-links">

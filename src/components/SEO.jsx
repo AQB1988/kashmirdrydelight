@@ -75,7 +75,7 @@ const SEO = ({
     },
     "priceRange": "₹299-₹3499",
     "servesCuisine": "Dry Fruits, Nuts, Dates, Berries",
-    "telephone": "+91-XXXXXXXXXX"
+    "telephone": "+916005324499"
   }
 
   // Product schema if product data is provided

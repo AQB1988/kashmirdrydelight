@@ -68,7 +68,7 @@ const Footer = () => {
             <h3>Contact Details</h3>
             <p>📍 Kashmir Valley, Srinagar, Jammu & Kashmir - 190001</p>
             <p>✉️ info@kashmirdrydelight.com</p>
-            <p>📞 +91-7051174849</p>
+            <p>📞 +916005324499</p>
           </div>
         </div>
 

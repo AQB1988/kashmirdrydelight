@@ -27,7 +27,7 @@ const Contact = () => {
     <main className="contact-page">
       <SEO 
         title="Contact Us - Kashmir Dry Delight | Get in Touch | Customer Support"
-        description="Contact Kashmir Dry Delight for inquiries about premium dry fruits, bulk orders, or customer support. Phone: +91-7051174849, Email: info@kashmirdrydelight.com. We're here to help you with all your dry fruits needs!"
+        description="Contact Kashmir Dry Delight for inquiries about premium dry fruits, bulk orders, or customer support. Phone: +916005324499, Email: info@kashmirdrydelight.com. We're here to help you with all your dry fruits needs!"
         keywords="contact kashmir dry delight, customer support, dry fruits inquiry, contact dry fruits store, dry fruits customer service, dry fruits helpline, kashmir dry delight contact, dry fruits support, bulk order inquiry, dry fruits phone number, dry fruits email, dry fruits customer care, contact dry fruits online, dry fruits help"
         url="/contact"
       />
@@ -43,7 +43,7 @@ const Contact = () => {
             </div>
             <div className="info-item">
               <h3>📞 Phone</h3>
-              <p>+91-7051174849</p>
+              <p>+916005324499</p>
             </div>
             <div className="info-item">
               <h3>✉️ Email</h3>

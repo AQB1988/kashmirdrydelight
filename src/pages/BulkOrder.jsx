@@ -63,7 +63,7 @@ const BulkOrder = () => {
 
             <div className="contact-info-box">
               <h3>For Bulk Order Inquiries</h3>
-              <p>📞 +91-7051174849</p>
+              <p>📞 +916005324499</p>
               <p>✉️ bulkorders@kashmirdrydelight.com</p>
             </div>
           </div>

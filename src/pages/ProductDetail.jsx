@@ -1,6 +1,7 @@
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import SEO from '../components/SEO'
+import { getAllProductsById } from '../utils/products'
 import './ProductDetail.css'
 
 const ProductDetail = () => {
@@ -8,30 +9,7 @@ const ProductDetail = () => {
   const navigate = useNavigate()
   const [selectedWeight, setSelectedWeight] = useState('1 kg')
 
-  // In a real app, this would come from an API
-  const allProducts = {
-    1: { id: 1, name: 'Almonds', basePrice: 999, category: 'nuts', image: '/assets/images/products/product-almonds.jpg', description: 'Premium quality almonds from Kashmir. Rich in protein, fiber, and healthy fats.' },
-    2: { id: 2, name: 'Cashews', basePrice: 899, category: 'nuts', image: '/assets/images/products/product-cashews.jpg', description: 'Jumbo sized cashew nuts, perfect for snacking and cooking.' },
-    3: { id: 3, name: 'Walnuts', basePrice: 699, category: 'nuts', image: '/assets/images/products/product-walnuts.jpg', description: 'Premium walnut kernels, rich in omega-3 fatty acids.' },
-    4: { id: 4, name: 'Pistachios', basePrice: 599, category: 'nuts', image: '/assets/images/products/product-pistachios.jpg', description: 'Top quality pistachios, crunchy and flavorful.' },
-    5: { id: 5, name: 'Medjool Dates', basePrice: 799, category: 'dates', image: '/assets/images/products/product-medjool-dates.jpg', description: 'Best quality Medjool dates, naturally sweet and soft.' },
-    6: { id: 6, name: 'Deglet Noor Dates', basePrice: 599, category: 'dates', image: '/assets/images/products/product-deglet-dates.jpg', description: 'Premium Deglet Noor dates, perfect for daily consumption.' },
-    7: { id: 7, name: 'Kashmiri Premium Mix', basePrice: 1299, category: 'exclusives', image: '/assets/images/products/product-kashmiri-mix.jpg', description: 'Exclusive mix of premium dry fruits from Kashmir.' },
-    8: { id: 8, name: 'Special Gift Box', basePrice: 1599, category: 'exclusives', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80', description: 'Special gift box with premium selection of dry fruits.' },
-    9: { id: 9, name: 'Blueberries', basePrice: 499, category: 'berries', image: '/assets/images/products/product-blueberries.jpg', description: 'Dried blueberries, rich in antioxidants.' },
-    10: { id: 10, name: 'Cranberries', basePrice: 399, category: 'berries', image: '/assets/images/products/product-cranberries.jpg', description: 'Sweet and tart dried cranberries.' },
-    11: { id: 11, name: 'Sunflower Seeds', basePrice: 299, category: 'seeds', image: '/assets/images/products/product-sunflower-seeds.jpg', description: 'Premium roasted sunflower seeds.' },
-    12: { id: 12, name: 'Pumpkin Seeds', basePrice: 349, category: 'seeds', image: '/assets/images/products/product-pumpkin-seeds.jpg', description: 'Nutritious pumpkin seeds, great for snacking.' },
-    13: { id: 13, name: 'Festival Gift Box', basePrice: 1299, category: 'gift-boxes', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80', description: 'Perfect gift box for festivals and special occasions.' },
-    14: { id: 14, name: 'Premium Gift Hamper', basePrice: 1599, category: 'gift-boxes', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80', description: 'Premium gift hamper with assorted dry fruits.' },
-    15: { id: 15, name: 'Deluxe Gift Collection', basePrice: 1999, category: 'gift-boxes', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80', description: 'Deluxe collection of premium dry fruits in an elegant gift box.' },
-    16: { id: 16, name: 'Luxury Gift Box', basePrice: 2499, category: 'gift-boxes', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80', description: 'Luxury gift box with the finest selection of dry fruits.' },
-    17: { id: 17, name: 'Royal Gift Hamper', basePrice: 2999, category: 'gift-boxes', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80', description: 'Royal gift hamper with premium dry fruits and chocolates.' },
-    18: { id: 18, name: 'Exclusive Gift Box', basePrice: 3499, category: 'gift-boxes', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80', description: 'Exclusive gift box with the most premium selection.' },
-    19: { id: 19, name: 'Gift Box Collection', basePrice: 3999, category: 'gift-boxes', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80', description: 'Premium gift box collection with assorted dry fruits.' },
-    20: { id: 20, name: 'Gift Box Collection', basePrice: 4499, category: 'gift-boxes', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80', description: 'Luxury gift box collection with premium selection.' },
-  }
-
+  const allProducts = getAllProductsById()
   const product = allProducts[parseInt(id)]
 
   const weightOptions = [

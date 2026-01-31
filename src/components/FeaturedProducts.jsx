@@ -1,15 +1,17 @@
 import { Link } from 'react-router-dom'
+import { getAllProducts } from '../utils/products'
 import './FeaturedProducts.css'
 
 const FeaturedProducts = () => {
-  const products = [
-    { id: 1, name: 'Breakfast Mix Seeds', price: '₹499', image: '/assets/images/products/product-breakfast-seeds.jpg' },
-    { id: 2, name: 'Best Quality Medjool Dates', price: '₹799', image: '/assets/images/products/product-medjool-dates.jpg' },
-    { id: 3, name: 'Exquisite Brazil Nuts', price: '₹899', image: '/assets/images/products/product-brazil-nuts.jpg' },
-    { id: 4, name: 'Premium Walnut Kernels', price: '₹699', image: '/assets/images/products/product-walnuts.jpg' },
-    { id: 5, name: 'Best Quality Plain Pista', price: '₹599', image: '/assets/images/products/product-pistachios.jpg' },
-    { id: 6, name: 'Premium Mamra Almonds', price: '₹999', image: '/assets/images/products/product-almonds.jpg' },
-  ]
+  // Get first 6 products from all categories as featured
+  const products = getAllProducts()
+    .slice(0, 6)
+    .map(product => ({
+      id: product.id,
+      name: product.name,
+      price: `₹${product.basePrice.toLocaleString('en-IN')}`,
+      image: product.image
+    }))
 
   return (
     <section className="featured-products">

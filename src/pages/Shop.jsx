@@ -1,35 +1,19 @@
 import { useSearchParams, Link } from 'react-router-dom'
 import SEO from '../components/SEO'
+import { getProductsByCategory } from '../utils/products'
 import './Shop.css'
 
 const Shop = () => {
   const [searchParams] = useSearchParams()
   const category = searchParams.get('category') || 'all'
 
-  const allProducts = [
-    { id: 1, name: 'Almonds', price: '₹999', category: 'nuts', image: '/assets/images/products/product-almonds.jpg' },
-    { id: 2, name: 'Cashews', price: '₹899', category: 'nuts', image: '/assets/images/products/product-cashews.jpg' },
-    { id: 3, name: 'Walnuts', price: '₹699', category: 'nuts', image: '/assets/images/products/product-walnuts.jpg' },
-    { id: 4, name: 'Pistachios', price: '₹599', category: 'nuts', image: '/assets/images/products/product-pistachios.jpg' },
-    { id: 5, name: 'Medjool Dates', price: '₹799', category: 'dates', image: '/assets/images/products/product-medjool-dates.jpg' },
-    { id: 6, name: 'Deglet Noor Dates', price: '₹599', category: 'dates', image: '/assets/images/products/product-deglet-dates.jpg' },
-    { id: 7, name: 'Kashmiri Premium Mix', price: '₹1,299', category: 'exclusives', image: '/assets/images/products/product-kashmiri-mix.jpg' },
-    { id: 8, name: 'Special Gift Box', price: '₹1,599', category: 'exclusives', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80' },
-    { id: 9, name: 'Blueberries', price: '₹499', category: 'berries', image: '/assets/images/products/product-blueberries.jpg' },
-    { id: 10, name: 'Cranberries', price: '₹399', category: 'berries', image: '/assets/images/products/product-cranberries.jpg' },
-    { id: 11, name: 'Sunflower Seeds', price: '₹299', category: 'seeds', image: '/assets/images/products/product-sunflower-seeds.jpg' },
-    { id: 12, name: 'Pumpkin Seeds', price: '₹349', category: 'seeds', image: '/assets/images/products/product-pumpkin-seeds.jpg' },
-    { id: 13, name: 'Festival Gift Box', price: '₹1,299', category: 'gift-boxes', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80' },
-    { id: 14, name: 'Premium Gift Hamper', price: '₹1,599', category: 'gift-boxes', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80' },
-    { id: 15, name: 'Deluxe Gift Collection', price: '₹1,999', category: 'gift-boxes', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80' },
-    { id: 16, name: 'Luxury Gift Box', price: '₹2,499', category: 'gift-boxes', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80' },
-    { id: 17, name: 'Royal Gift Hamper', price: '₹2,999', category: 'gift-boxes', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80' },
-    { id: 18, name: 'Exclusive Gift Box', price: '₹3,499', category: 'gift-boxes', image: 'https://images.unsplash.com/photo-1615485925502-babf8aed3d43?w=800&q=80' },
-  ]
-
-  const filteredProducts = category === 'all' 
-    ? allProducts 
-    : allProducts.filter(p => p.category === category)
+  const allProducts = getProductsByCategory(category)
+  
+  // Format products for display (add price string)
+  const filteredProducts = allProducts.map(product => ({
+    ...product,
+    price: `₹${product.basePrice.toLocaleString('en-IN')}`
+  }))
 
   return (
     <main className="shop-page">

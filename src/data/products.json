@@ -65,7 +65,7 @@
       "name": "Special Gift Box",
       "basePrice": 1599,
       "category": "exclusives",
-      "image": "https://images.unsplash.com/photo-1579282940892-6152e6e80c52?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image": "/assets/images/products/special-gift-box.jpg",
       "description": "Special gift box with premium selection of dry fruits."
     }
   ],
@@ -111,7 +111,7 @@
       "name": "Festival Gift Box",
       "basePrice": 1299,
       "category": "gift-boxes",
-      "image": "https://images.unsplash.com/photo-1661836990173-97481f67f85b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image": "/assets/images/products/product-fest-seeds.jpg",
       "description": "Perfect gift box for festivals and special occasions."
     },
     {
@@ -119,7 +119,7 @@
       "name": "Premium Gift Hamper",
       "basePrice": 1599,
       "category": "gift-boxes",
-      "image": "https://www.istockphoto.com/photo/nut-store-in-the-streets-of-fez-gm653452600-118702769?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fdryfruits&utm_term=dryfruits%3A%3Awallpapers-no-affiliates%3Acontrol%3A25d9f3cb-dbb6-4b73-9b1e-dbbff18aa1a9",
+      "image": "/assets/images/products/product-pgh.jpg",
       "description": "Premium gift hamper with assorted dry fruits."
     },
     {
@@ -127,7 +127,7 @@
       "name": "Deluxe Gift Collection",
       "basePrice": 1999,
       "category": "gift-boxes",
-      "image": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&h=800&fit=crop&q=80",
+      "image": "/assets/images/products/Deluxe-Gift-Collection.jpg",
       "description": "Deluxe collection of premium dry fruits in an elegant gift box."
     },
     {
@@ -135,7 +135,7 @@
       "name": "Luxury Gift Box",
       "basePrice": 2499,
       "category": "gift-boxes",
-      "image": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&h=800&fit=crop&q=80",
+      "image": "/assets/images/products/Luxury-Gift-Box.jpg",
       "description": "Luxury gift box with the finest selection of dry fruits."
     },
     {
@@ -143,7 +143,7 @@
       "name": "Royal Gift Hamper",
       "basePrice": 2999,
       "category": "gift-boxes",
-      "image": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&h=800&fit=crop&q=80",
+      "image": "/assets/images/products/Royal-Gift-Hamper.jpg",
       "description": "Royal gift hamper with premium dry fruits and chocolates."
     },
     {
@@ -151,7 +151,7 @@
       "name": "Exclusive Gift Box",
       "basePrice": 3499,
       "category": "gift-boxes",
-      "image": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&h=800&fit=crop&q=80",
+      "image": "/assets/images/products/lol.jpg",
       "description": "Exclusive gift box with the most premium selection."
     },
     {
@@ -159,7 +159,7 @@
       "name": "Gift Box Collection",
       "basePrice": 3999,
       "category": "gift-boxes",
-      "image": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&h=800&fit=crop&q=80",
+      "image": "/assets/images/products/123.jpg",
       "description": "Premium gift box collection with assorted dry fruits."
     },
     {
@@ -167,7 +167,7 @@
       "name": "Gift Box Collection",
       "basePrice": 4499,
       "category": "gift-boxes",
-      "image": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&h=800&fit=crop&q=80",
+      "image": "/assets/images/products/lol.jpg",
       "description": "Luxury gift box collection with premium selection."
     }
   ]

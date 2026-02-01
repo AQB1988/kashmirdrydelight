@@ -21,11 +21,12 @@ const Home = () => {
       <Hero />
       <Categories />
       <GiftBoxes />
+
+      <FeaturedProducts />
+      <SignatureGiftBoxes />
       <Features />
       {/* <Testimonials /> */}
       <Newsletter />
-      <FeaturedProducts />
-      <SignatureGiftBoxes />
     </main>
   );
 };
